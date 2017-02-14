@@ -1,0 +1,33 @@
+name: email_plugin
+version: 0.0.1
+language: 
+description: email plugin, send msg by email.
+tags:
+ - email
+ - plugin
+
+public: true
+
+# clone_in_docker: false
+
+inputs:
+  - name: FLOW_EMAIL_MSG_CENTER_URL
+    editable: false
+
+  - name: FLOW_EMAIL_MSG_CENTER_KEY
+    editable: false
+    
+  - name: FLOW_EMAIL_MSG_CENTER_SECRET
+    editable: false 
+
+  - name: FLOW_EMAIL_TO
+    editable: true  
+
+  - name: FLOW_EMAIL_SUBJECT
+    editable: true
+
+  - name: FLOW_EMAIL_CONTENT
+    editable: true
+outputs:
+
+script_path: ./run.sh
