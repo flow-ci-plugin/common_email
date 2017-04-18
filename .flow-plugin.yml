@@ -1,6 +1,6 @@
 name: email_plugin
 version: 0.0.1
-language: 
+language:
 description: email plugin, send msg by email.
 tags:
  - email
@@ -11,22 +11,20 @@ public: true
 # clone_in_docker: false
 
 inputs:
-  - name: FLOW_EMAIL_MSG_CENTER_URL
-    editable: false
-
-  - name: FLOW_EMAIL_MSG_CENTER_KEY
-    editable: false
-    
-  - name: FLOW_EMAIL_MSG_CENTER_SECRET
-    editable: false 
-
   - name: FLOW_EMAIL_TO
-    editable: true  
+    desc_cn: "要发送的邮件地址"
+    desc_cn: "email address"
+    editable: true
 
   - name: FLOW_EMAIL_SUBJECT
+    desc_cn: "邮件主题"
+    desc_en: "email subject"
     editable: true
 
   - name: FLOW_EMAIL_CONTENT
+    desc_cn: "邮件内容"
+    desc_en: "email content"
+    category: "textarea"
     editable: true
 outputs:
 
