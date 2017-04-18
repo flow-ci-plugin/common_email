@@ -13,7 +13,7 @@ public: true
 inputs:
   - name: FLOW_EMAIL_TO
     desc_cn: "要发送的邮件地址"
-    desc_cn: "email address"
+    desc_en: "email address"
     editable: true
 
   - name: FLOW_EMAIL_SUBJECT
